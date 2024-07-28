@@ -21,7 +21,7 @@ def init():
 def create_circle(space, pos):
     body = pymunk.Body(1, 500, body_type=pymunk.Body.DYNAMIC)
     body.position = pos
-    shape = pymunk.Circle(body, 7)
+    shape = pymunk.Circle(body, 8)
     shape.elasticity = 0.95
     shape.friction = 0.9
     space.add(body, shape)
